@@ -1,11 +1,12 @@
 {
-  "name": "main",
-  "version": "1.0.0",
+  "name": "custom",
+  "version": "1.0.1",
   "description": "",
-  "main": "webpack.config.js",
+  "main": "./dist/main.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "start": "webpack --watch --progress",
-    "serve": "node index.js",
     "build": "webpack"
   },
   "author": "",
@@ -14,18 +15,12 @@
     "@babel/core": "^7.1.0",
     "@babel/plugin-proposal-class-properties": "^7.1.0",
     "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/polyfill": "^7.0.0",
     "@babel/preset-env": "^7.1.0",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.2",
-    "custom-static": "file:../custom-static/custom-1.0.1.tgz",
-    "serve": "^10.0.2",
+    "react": "^16.5.2",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.1"
-  },
-  "dependencies": {
-    "@babel/polyfill": "^7.0.0",
-    "express": "^4.16.3",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2"
   }
 }
